@@ -452,11 +452,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/emjay/Documents/For Test/PresentCon/backend/api/api/api.csproj",
+      "projectUniqueName": "/home/emjay/Documents/For Test/PresentCon/groups-management/groups-management/backend/api/api/api.csproj",
       "projectName": "api",
-      "projectPath": "/home/emjay/Documents/For Test/PresentCon/backend/api/api/api.csproj",
+      "projectPath": "/home/emjay/Documents/For Test/PresentCon/groups-management/groups-management/backend/api/api/api.csproj",
       "packagesPath": "/home/emjay/.nuget/packages/",
-      "outputPath": "/home/emjay/Documents/For Test/PresentCon/backend/api/api/obj/",
+      "outputPath": "/home/emjay/Documents/For Test/PresentCon/groups-management/groups-management/backend/api/api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/emjay/.nuget/NuGet/NuGet.Config"
@@ -507,7 +507,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.115/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.116/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

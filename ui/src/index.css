@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.gradient{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(360deg,rgba(66, 42, 155, 1) 0%, rgba(61, 64, 164, 1) 14%, rgba(134, 61, 164, 1) 81%);
+  line-height: 3.5rem;;
+  margin:5px;
+  border-radius: 5px;
+  height: 3.5rem;
+  color:rgba(255, 222, 100, 1);
+}
+.table-responsive{
+  cursor: pointer;
+}
