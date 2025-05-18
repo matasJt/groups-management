@@ -117,8 +117,8 @@ function Group() {
           {members.map((member) => (
             <tr key={member.id}>
               <td>{member.name}</td>
-              <td>{member.owe}</td>
-              <td>{member.owed}</td>
+              <td>{member.owe.toFixed(2)} $</td>
+              <td>{member.owed.toFixed(2)} $</td>
               <td>
                 <button
                   className="btn btn-success btn-sm float-end"

@@ -63,7 +63,9 @@ namespace api.Controllers
             }
 
             var count = _context.Members.Count(x => x.Group.Id == groupId) + 1;
+            var groups = _context.Groups.ToList();
             var members = _context.Members.Where(x=> x.Group.Id == groupId).ToList();
+            decimal sum = 0;
             if (count > 0)
             {
                 var owe = _tasks.SplitValue(dto.Amount, count);
@@ -71,7 +73,16 @@ namespace api.Controllers
                 {
                     if (member.Id == dto.Payer.Id)
                     {
+                        sum += owe;
                         member.Owe += owe;
+                    }
+                }
+
+                foreach (var g in groups)
+                {
+                    if (group.Id == g.Id)
+                    {
+                        group.TotalOwe += sum;
                     }
                 }
             }
@@ -86,6 +97,7 @@ namespace api.Controllers
             };
             _context.Transactions.Add(transaction);
             _context.Members.UpdateRange(members);
+            _context.Groups.UpdateRange(groups);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetTransaction", new { id = transaction.Id }, transaction);

@@ -68,8 +68,8 @@ function Groups() {
           {groups.map((group) => (
             <tr key={group.name} className="table-primary" onClick={()=>openGroup(group.id)}>
               <td>{group.name}</td>
-              <td>{group.totalOwe}</td>
-              <td>{group.totalOwed}</td>
+              <td>{group.totalOwe.toFixed(2)} $</td>
+              <td>{group.totalOwed.toFixed(2)} $</td>
             </tr>
           ))}
         </tbody>
