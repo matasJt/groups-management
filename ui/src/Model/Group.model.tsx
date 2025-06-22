@@ -2,5 +2,6 @@ export interface Group{
     id:string,
     name:string,
     totalOwe:number,
-    totalOwed:number
+    totalOwed:number,
+    isChecked:boolean
 }

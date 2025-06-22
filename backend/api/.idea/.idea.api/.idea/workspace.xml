@@ -8,18 +8,135 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="689fdcf7-37ec-4145-b16c-e4d8b01421f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/.idea/.idea.api/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/.idea/.idea.api/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/.idea/.idea.api/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/api.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/api.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/Debug/net8.0/api.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/Debug/net8.0/api.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/Debug/net8.0/api.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/Debug/net8.0/api.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/Debug/net8.0/api.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/Debug/net8.0/api.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/api.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/api.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/api.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/api/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../backend/api/global.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.api/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.api/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Controllers/TransactionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/TransactionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bin/Debug/net8.0/api" beforeDir="false" afterPath="$PROJECT_DIR$/api/bin/Debug/net8.0/api" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/bin/Debug/net8.0/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/bin/Debug/net8.0/api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/bin/Debug/net8.0/api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/api/bin/Debug/net8.0/api.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net8.0/api.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net8.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net8.0/apphost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net8.0/ref/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net8.0/ref/api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net8.0/refint/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net8.0/refint/api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/api.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/api.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/api.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/13.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/14.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/15.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/15.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/16.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/16.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/17.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/17.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/18.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/18.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/19.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/19.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/20.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/20.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/21.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/21.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/22.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/22.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/23.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/23.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/24.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/24.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/25.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/25.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/26.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/26.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/27.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/27.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/28.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/28.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/29.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/29.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/30.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/30.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/31.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/31.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/32.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/32.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/33.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/33.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/34.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/34.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/35.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/35.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/36.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/36.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/37.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/37.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/38.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/38.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/39.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/39.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/40.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/40.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/41.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/41.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/42.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/42.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/43.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/43.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/44.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/44.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/48.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/48.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/50.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/50.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/51.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/51.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/52.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/52.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/53.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/53.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/54.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/54.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/55.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/55.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/56.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/56.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.cache/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.cache/tsconfig.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react-dom/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react-dom/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react-dom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react-dom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/experimental.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/experimental.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/experimental.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/experimental.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/v18/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/v18/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/v18/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/v18/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/v18/ts5.0/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/v18/ts5.0/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/v18/ts5.0/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/node_modules/@types/react/ts5.0/v18/ts5.0/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/src/Components/Groups.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/src/Components/Groups.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/src/Components/Popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/src/Components/Popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/src/Model/Group.model.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/src/Model/Group.model.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../ui/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +214,8 @@
       <workItem from="1747485848414" duration="19175000" />
       <workItem from="1747561805086" duration="35424000" />
       <workItem from="1747606456238" duration="1464000" />
+      <workItem from="1750513112778" duration="705000" />
+      <workItem from="1750594951333" duration="1241000" />
     </task>
     <servers />
   </component>

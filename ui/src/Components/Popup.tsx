@@ -21,7 +21,7 @@ function Popup({title,show, onClose, onSubmit}:PopUp) {
     <>
       <Modal show={show} onHide={onClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{title}</Modal.Title>
+          <Modal.Title className="text text-sm">{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <input type="text" placeholder="Here" onChange={e=> setInputValue(e.target.value)} />

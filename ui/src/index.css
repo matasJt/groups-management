@@ -4,7 +4,10 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+html{
+   height: 100vh;
+   background-color: rgba(119, 148, 210, 0.3);
 }
 
 code {
@@ -23,6 +26,16 @@ code {
   height: 3.5rem;
   color:rgba(255, 222, 100, 1);
 }
-.table-responsive{
+.table{
   cursor: pointer;
+}
+.table th{
+  height: 80px;
+}
+.table td{
+  height: 75px;
+}
+#table-div{
+  width: 90%;
+  padding: 50px 50px 50px 50px;
 }

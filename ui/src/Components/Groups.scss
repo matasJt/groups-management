@@ -1,0 +1,24 @@
+@mixin button-base{
+    border-radius: 15px;
+    height: 4rem;
+    border:none;
+}
+
+#group-button{
+    @include button-base;
+    background-color: rgba(15, 81, 204, 0.8);
+    &:hover{
+        background-color: rgba(11, 101, 197, 0.8)
+    }
+}
+#delete-button{
+    @include button-base;
+    background-color: rgb(220, 68, 68);
+    &:hover{
+        background-color: rgb(200,0,0);
+    }
+    
+}
+td, th{
+    font-size: 1.8rem;
+}

@@ -103,7 +103,7 @@ function Group() {
         onSubmit={(name) => onCreateMember(name)}
       />
       <h3>{members.find((x) => x.group.id === groupId)?.group.name}</h3>
-      <table className="table table-light small container table-hover table-borderless table-primary align-middle">
+      <table className="table table-light container table-hover table-borderless table-primary align-middle">
         <thead>
           <tr>
             <th scope="col">Member</th>
