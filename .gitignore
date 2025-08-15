@@ -1,3 +1,4 @@
 *.http
 bin/
 obj/
+.env
