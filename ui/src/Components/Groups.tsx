@@ -1,34 +1,70 @@
 import React, { useEffect, useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useNavigate } from "react-router-dom";
 import Popup from "./Popup";
-import Button from "react-bootstrap/Button";
-import axios from "axios";
 import { Group } from "../Model/Group.model";
-import AddIcon from "@mui/icons-material/Add";
-import DeleteIcon from "@mui/icons-material/Delete";
-import "./Groups.scss";
+import "./styles/Groups.scss";
+import "@mantine/notifications/styles.css";
+import GroupNavBar from "./GroupNavBar";
+import {
+  Button,
+  Checkbox,
+  Container,
+  createTheme,
+  Flex,
+  MantineProvider,
+  Paper,
+} from "@mantine/core";
+import { IconCheck, IconTrash, IconUsersGroup } from "@tabler/icons-react";
+import { API } from "../api/requests";
+import { notifications, Notifications } from "@mantine/notifications";
 
 function Groups() {
   const navigate = useNavigate();
   const [groups, setGroups] = useState<Group[]>([]);
   const [showPopup, setShowPopup] = useState<boolean>(false);
+  const [showDelete, setShowDelete] = useState(false);
+  const [DeleteAll, setDeleteAll] = useState(false);
+
+  const theme = createTheme({
+    cursorType: "pointer",
+  });
 
   useEffect(() => {
-    axios
-      .get<Group[]>(`http://localhost:5257/api/Group/`)
-      .then((response) => {
-        setGroups(response.data);
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    API.GroupService.getGroup().then((group) => {
+      setGroups(group);
+    });
   }, []);
 
-  const openGroup = (event: any, groupId: string) => {
-    event?.stopPropagation();
+  const deleteSelected = () => {
+    const selectedGroups = groups.filter((x) => x.isChecked).map((x) => x.id);
+    setGroups((prev) => prev.filter((g) => !selectedGroups.includes(g.id)));
+    API.GroupService.deleteGroup(selectedGroups);
+    setDeleteAll(false);
+    setShowDelete(false);
+    notifications.show({
+      autoClose: 1200,
+      message: "Deleted",
+      withCloseButton: false,
+      radius: "xl",
+      icon: <IconCheck size={20} />,
+      styles: (theme) => ({
+        root: {
+          backgroundColor: theme.colors.red?.[5],
+        },
+        icon: {
+          backgroundColor: theme.colors.red[5],
+          color: theme.white,
+        },
+        description: {
+          color: theme.white,
+          fontWeight: "bold",
+          fontSize: "15px",
+        },
+      }),
+    });
+  };
+
+  const openGroup = (groupId: string) => {
     navigate(`/group/${groupId}`);
   };
   const handleOpenPopup = () => {
@@ -40,94 +76,125 @@ function Groups() {
   };
 
   const onCreate = (value: string) => {
-    axios
-      .post<Group>("http://localhost:5257/api/Group", { name: value })
-      .then((response) => {
-        setGroups((old) => [...old, response.data]);
-      })
-      .catch((error) => {
-        alert("Name cannot be empty");
-      });
+    if (value.trim().length === 0) {
+      return;
+    }
+    API.GroupService.postGroup({ name: value }).then((group: Group) => {
+      const oldGroups = groups.map((g) => ({
+        ...g,
+        isChecked: false,
+      }));
+      group.isChecked = false;
+      setGroups([...oldGroups, group]);
+    });
   };
 
   const checkHandler = (idToUpdate: string, checked: boolean) => {
     const group = groups.find((x) => x.id === idToUpdate);
     if (group != null) {
-      setGroups((group) =>
-        group.map((x) =>
-          x.id === idToUpdate ? { ...x, isChecked: !checked } : x
-        )
+      const updatedGroups = groups.map((x) =>
+        x.id === idToUpdate ? { ...x, isChecked: checked } : x
       );
+
+      setGroups(updatedGroups);
+      const count = updatedGroups.filter((x) => x.isChecked).length;
+      setShowDelete(count > 0);
+      setDeleteAll(count === updatedGroups.length);
     }
   };
-  return (
-    <div
-      className="table-responsive border rounded-4 bg-body-tertiary mt-5 shadow mb-5 container-fluid"
-      id="table-div"
-      
-    >
-      <Button
-        onClick={handleOpenPopup}
-        className="my-3 float-end"
-        id="group-button"
-      >
-        <AddIcon fontSize="small" />
-        <span className="p-2 fs-5 fw-bold">Add New Group</span>
-      </Button>
+  const checkAll = (state: boolean) => {
+    const updatedGroups = groups.map((group) => ({
+      ...group,
+      isChecked: state,
+    }));
 
+    setGroups(updatedGroups);
+    const count = updatedGroups.filter((x) => x.isChecked).length;
+    setShowDelete(count > 0);
+    setDeleteAll(count === updatedGroups.length);
+  };
+  return (
+    <>
+      <Notifications position="top-right" />
+      <Paper shadow="xs">
+        <GroupNavBar handlePopup={handleOpenPopup} title="Create new group" />
+      </Paper>
       <Popup
         show={showPopup}
         onClose={handleClosePopup}
-        title="Enter new group name"
+        title="New group"
         onSubmit={(name) => onCreate(name)}
       />
-      <span className="fw-bold float-start" style={{fontSize:"50px"}}>Groups</span>
-      <table className="rounded-4 table table-hover table-borderless table-primary align-middle table-responsive">
-        <thead className="table-success">
-          <tr>
-            <th></th>
-            <th className="fw-semibold align-middle" >NAME</th>
-            <th className="fw-semibold align-middle">MEMBERS</th>
-            <th className="fw-semibold align-middle ">YOU OWE</th>
-            <th className="fw-semibold align-middle">OWES YOU</th>
-            <th className="fw-semibold align-middle">CREATED</th>
-            <th className="fw-semibold align-middle">ACTIONS</th>
-          </tr>
-        </thead>
-        <tbody>
-          {groups.map((group) => (
-            <tr
-              key={group.name}
-              className="table-secondary"
-              onClick={() => checkHandler(group.id, group.isChecked)}
+      <Container size="lg" w="90%">
+        <Flex
+          bg="white"
+          justify="space-between"
+          align="center"
+          pt="xs"
+          pb="xs"
+          p="sm"
+          style={{ borderTopLeftRadius: "20px", borderTopRightRadius: "20px" }}
+          mt="md"
+        >
+          <MantineProvider theme={theme}>
+            <Checkbox
+              size="sm"
+              me="sm"
+              label="Select All"
+              checked={DeleteAll}
+              onChange={(e) => checkAll(e.target.checked)}
+            ></Checkbox>
+          </MantineProvider>
+
+          <Button
+            onClick={deleteSelected}
+            color="red"
+            radius="20px"
+            className={showDelete ? "button show" : "button"}
+          >
+            <IconTrash size="20" className="me-1" />
+            Delete Selected
+          </Button>
+        </Flex>
+        {/* Group section */}
+        {Array.isArray(groups) &&
+          groups.map((group) => (
+            <Flex
+              id="group"
+              key={group.id}
+              align="flex-start"
+              p="sm"
+              className="shadow"
             >
-              <td>
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id={group.id}
+              <MantineProvider theme={theme}>
+                <Checkbox
+                  size="sm"
+                  me="sm"
                   checked={group.isChecked}
-                />
-              </td>
-              <td>{group.name}</td>
-              <td>{group.totalOwe.toFixed(2)} $</td>
-              <td>{group.totalOwed.toFixed(2)} $</td>
-              <td></td>
-              <td></td>
-              <td>
-                <a href={group.id} onClick={(e) => openGroup(e, group.id)}>
-                  View
-                </a>
-              </td>
-            </tr>
+                  onChange={(e) => checkHandler(group.id, e.target.checked)}
+                ></Checkbox>
+              </MantineProvider>
+              <IconUsersGroup className="me-3" />
+
+              <Flex direction="column" justify="space-between" align="start">
+                <span
+                  onClick={() => openGroup(group.id)}
+                  className="fw-semibold"
+                  style={{ cursor: "pointer" }}
+                >
+                  {group.name}
+                </span>
+                <div className="small text-muted">
+                  24 members •
+                  <span className="text-danger">Owe: {group.totalOwe}</span> •
+                  <span className="text-success">Owed: {group.totalOwed}</span>{" "}
+                  • Created
+                </div>
+              </Flex>
+            </Flex>
           ))}
-        </tbody>
-      </table>
-      <Button className="float-end my-3" id="delete-button">
-        <DeleteIcon />
-        <span className="p-2 fs-5 fw-bold">Delete Selected</span>
-      </Button>
-    </div>
+      </Container>
+    </>
   );
 }
 

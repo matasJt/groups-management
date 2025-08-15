@@ -1,0 +1,32 @@
+#create-button:hover #icon {
+  transform: translateX(-2px);
+  transition: all 0.5s;
+}
+#icon {
+  transition: all 0.2s;
+}
+.button {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+.button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#groups-list {
+  transition: all 0.2s;
+  color: black;
+  &:hover {
+    transition: all 0.5s;
+    color: rgb(0, 200, 201)
+  }
+}
+#group{
+  background-color: white;
+  &:hover{
+    background-color: rgba(255,255,222,0.3);
+  }
+}

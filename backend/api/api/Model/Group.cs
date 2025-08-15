@@ -3,15 +3,13 @@ using api.Model.Dto;
 
 namespace api.Model;
 
-public class Group
+public class Group(Guid id, string name, decimal totalOwe=0, decimal totalOwed=0)
 {
-    public Guid Id { get; set; }
-    public string Name { get; set; }
-    public decimal TotalOwe { get; set; }
-    public decimal TotalOwed { get; set; }
+    public Guid Id { get; set; } = id;
+    public string Name { get; set; } = name;
+    public decimal TotalOwe { get; set; } = totalOwe;
+    public decimal TotalOwed { get; set; } = totalOwed;
 
-    public GroupDto ToDto()
-    {
-        return new GroupDto(Id, Name, TotalOwe, TotalOwed);
-    }
+    public GroupDto ToDto() => new(Id, Name, TotalOwe, TotalOwed);
+    
 }

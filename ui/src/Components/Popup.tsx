@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { Button, TextInput} from "@mantine/core";
 
 type PopUp ={
   show:boolean,
@@ -19,20 +19,15 @@ function Popup({title,show, onClose, onSubmit}:PopUp) {
 
   return (
     <>
-      <Modal show={show} onHide={onClose}>
+      <Modal show={show} onHide={onClose} backdrop="static">
         <Modal.Header closeButton>
           <Modal.Title className="text text-sm">{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <input type="text" placeholder="Here" onChange={e=> setInputValue(e.target.value)} />
+          <TextInput placeholder="Enter new group name" autoFocus onChange={e=> setInputValue(e.target.value)}></TextInput>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={onClose}>
-            Cancel
-          </Button>
-          <Button variant="primary" onClick={handleSubmit}>
-            Add
-          </Button>
+          <Button variant="outline" color="lime" onClick={handleSubmit}>Add</Button>
         </Modal.Footer>
       </Modal>
     </>

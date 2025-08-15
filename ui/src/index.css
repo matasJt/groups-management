@@ -29,13 +29,3 @@ code {
 .table{
   cursor: pointer;
 }
-.table th{
-  height: 80px;
-}
-.table td{
-  height: 75px;
-}
-#table-div{
-  width: 90%;
-  padding: 50px 50px 50px 50px;
-}
