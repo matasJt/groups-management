@@ -1,4 +1,4 @@
 *.http
 bin/
 obj/
-.env
+.env.development
