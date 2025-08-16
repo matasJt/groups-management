@@ -11,16 +11,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddScoped<GroupsService>();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<GroupsDbContext>(options => options.UseInMemoryDatabase(builder.Configuration.GetConnectionString("GroupDatabase") ?? throw new InvalidOperationException()));
-builder.Services.AddCors(policy=> policy.AddDefaultPolicy(options=> options.WithOrigins("http://localhost:3001").AllowAnyHeader().AllowAnyMethod().AllowCredentials()));
+builder.Services.AddDbContext<GroupsDbContext>(options =>
+    options.UseInMemoryDatabase(builder.Configuration.GetConnectionString("GroupDatabase") ??
+                                throw new InvalidOperationException()));
+builder.Services.AddCors(policy => policy.AddDefaultPolicy(options =>
+    options.WithOrigins("http://localhost:3001").AllowAnyHeader().AllowAnyMethod().AllowCredentials()));
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+
 app.UseCors();
 
 app.UseAuthorization();

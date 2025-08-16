@@ -13,7 +13,7 @@ public class Member(Guid id, string name, bool settled = false, decimal owed = 0
     public Group Group { get; set; } = null!;
 
     public MemberDto ToDto() =>
-        new (
+        new(
             Id,
             Name,
             new GroupDto(Group.Id, Group.Name, Group.TotalOwe, Group.TotalOwed),
@@ -21,5 +21,4 @@ public class Member(Guid id, string name, bool settled = false, decimal owed = 0
             Owed,
             Settled
         );
-
 }

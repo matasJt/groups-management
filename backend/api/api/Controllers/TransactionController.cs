@@ -11,10 +11,8 @@ using api.Services;
 
 namespace api.Controllers;
 
-
-    [Route("api/[controller]")]
-    [ApiController]
-    public class TransactionController(GroupsDbContext context, GroupsService groupsService) : ControllerBase
-    {
-    }
-
+[Route("api/[controller]")]
+[ApiController]
+public class TransactionController(GroupsDbContext context, GroupsService groupsService) : ControllerBase
+{
+}

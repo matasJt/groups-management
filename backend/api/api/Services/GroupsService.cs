@@ -8,7 +8,7 @@ namespace api.Services;
 
 public class GroupsService(GroupsDbContext context)
 {
-    public decimal SplitValue(decimal amount,int memberCount)
+    public decimal SplitValue(decimal amount, int memberCount)
     {
         return amount / memberCount;
     }

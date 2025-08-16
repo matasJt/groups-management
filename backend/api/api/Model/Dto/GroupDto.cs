@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace api.Model.Dto;
 
-public record GroupDto(Guid Id, string Name,decimal TotalOwe,decimal TotalOwed);
+public record GroupDto(Guid Id, string Name, decimal TotalOwe, decimal TotalOwed);
 
 public record CreateGroupDto
 {

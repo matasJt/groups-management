@@ -1,9 +1,9 @@
-using api.Model;
+using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace api.Data;
+namespace Infrastructure.Data;
 
-public class GroupsDbContext(DbContextOptions<GroupsDbContext> options) : DbContext(options)
+public class DataDbContext(DbContextOptions<DataDbContext> options) : DbContext(options)
 {
     public DbSet<Group> Groups { get; set; }
     public DbSet<Transaction> Transactions { get; set; }
